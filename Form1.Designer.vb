@@ -25,12 +25,16 @@ Partial Class Registration_System
         DataGridView1 = New DataGridView()
         Button1 = New Button()
         Button2 = New Button()
+        ViewColumn = New DataGridViewButtonColumn()
+        EditColumn = New DataGridViewButtonColumn()
+        DeleteColumn = New DataGridViewButtonColumn()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {ViewColumn, EditColumn, DeleteColumn})
         DataGridView1.Location = New Point(12, 52)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 62
@@ -57,6 +61,27 @@ Partial Class Registration_System
         Button2.Text = "Refresh"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' ViewColumn
+        ' 
+        ViewColumn.HeaderText = "View"
+        ViewColumn.MinimumWidth = 8
+        ViewColumn.Name = "ViewColumn"
+        ViewColumn.Width = 150
+        ' 
+        ' EditColumn
+        ' 
+        EditColumn.HeaderText = "Edit"
+        EditColumn.MinimumWidth = 8
+        EditColumn.Name = "EditColumn"
+        EditColumn.Width = 150
+        ' 
+        ' DeleteColumn
+        ' 
+        DeleteColumn.HeaderText = "Delete"
+        DeleteColumn.MinimumWidth = 8
+        DeleteColumn.Name = "DeleteColumn"
+        DeleteColumn.Width = 150
+        ' 
         ' Registration_System
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -74,5 +99,8 @@ Partial Class Registration_System
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ViewColumn As DataGridViewButtonColumn
+    Friend WithEvents EditColumn As DataGridViewButtonColumn
+    Friend WithEvents DeleteColumn As DataGridViewButtonColumn
 
 End Class
