@@ -43,6 +43,10 @@ Public Class Add_edit
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim home As New Home()
+        home.Show()
 
+        ' Close or hide the current form
+        Me.Close() ' closes the current form
     End Sub
 End Class
