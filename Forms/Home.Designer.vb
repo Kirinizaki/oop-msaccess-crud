@@ -22,40 +22,88 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Button1 = New Button()
-        Button2 = New Button()
+        NewButton = New Button()
+        DataGridView1 = New DataGridView()
+        ViewButton = New DataGridViewButtonColumn()
+        EditButton = New DataGridViewButtonColumn()
+        DeleteButton = New DataGridViewButtonColumn()
+        RefreshButton = New Button()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Button1
+        ' NewButton
         ' 
-        Button1.Location = New Point(652, 374)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(98, 36)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        NewButton.Location = New Point(306, 449)
+        NewButton.Margin = New Padding(4, 5, 4, 5)
+        NewButton.Name = "NewButton"
+        NewButton.Size = New Size(140, 60)
+        NewButton.TabIndex = 0
+        NewButton.Text = "Add New"
+        NewButton.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' DataGridView1
         ' 
-        Button2.Location = New Point(488, 355)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(99, 43)
-        Button2.TabIndex = 1
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.AllowUserToOrderColumns = True
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {ViewButton, EditButton, DeleteButton})
+        DataGridView1.Location = New Point(12, 22)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 62
+        DataGridView1.Size = New Size(676, 408)
+        DataGridView1.TabIndex = 2
+        ' 
+        ' ViewButton
+        ' 
+        ViewButton.HeaderText = "View"
+        ViewButton.MinimumWidth = 8
+        ViewButton.Name = "ViewButton"
+        ViewButton.Width = 150
+        ' 
+        ' EditButton
+        ' 
+        EditButton.HeaderText = "Edit"
+        EditButton.MinimumWidth = 8
+        EditButton.Name = "EditButton"
+        EditButton.Width = 150
+        ' 
+        ' DeleteButton
+        ' 
+        DeleteButton.HeaderText = "Delete"
+        DeleteButton.MinimumWidth = 8
+        DeleteButton.Name = "DeleteButton"
+        DeleteButton.Width = 150
+        ' 
+        ' RefreshButton
+        ' 
+        RefreshButton.Location = New Point(576, 438)
+        RefreshButton.Margin = New Padding(4, 5, 4, 5)
+        RefreshButton.Name = "RefreshButton"
+        RefreshButton.Size = New Size(112, 33)
+        RefreshButton.TabIndex = 3
+        RefreshButton.Text = "Refresh"
+        RefreshButton.UseVisualStyleBackColor = True
         ' 
         ' Home
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        ClientSize = New Size(700, 523)
+        Controls.Add(RefreshButton)
+        Controls.Add(DataGridView1)
+        Controls.Add(NewButton)
+        Margin = New Padding(4, 5, 4, 5)
         Name = "Home"
         Text = "Home"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents NewButton As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents RefreshButton As Button
+    Friend WithEvents ViewButton As DataGridViewButtonColumn
+    Friend WithEvents EditButton As DataGridViewButtonColumn
+    Friend WithEvents DeleteButton As DataGridViewButtonColumn
+
 End Class
