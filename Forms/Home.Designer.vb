@@ -28,29 +28,32 @@ Partial Class Home
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(652, 374)
+        Button1.Location = New Point(697, 477)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(98, 36)
+        Button1.Size = New Size(112, 48)
         Button1.TabIndex = 0
-        Button1.Text = "Button1"
+        Button1.Text = "Register"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(488, 355)
+        Button2.Location = New Point(558, 473)
+        Button2.Margin = New Padding(3, 4, 3, 4)
         Button2.Name = "Button2"
-        Button2.Size = New Size(99, 43)
+        Button2.Size = New Size(113, 57)
         Button2.TabIndex = 1
         Button2.Text = "Button2"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Home
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(914, 600)
         Controls.Add(Button2)
         Controls.Add(Button1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Home"
         Text = "Home"
         ResumeLayout(False)
