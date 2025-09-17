@@ -43,6 +43,9 @@ Partial Class Add_edit
         Label9 = New Label()
         Label10 = New Label()
         TextBox6 = New TextBox()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -218,11 +221,41 @@ Partial Class Add_edit
         TextBox6.Size = New Size(318, 31)
         TextBox6.TabIndex = 22
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(53, 624)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(112, 34)
+        Button1.TabIndex = 23
+        Button1.Text = "Save"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(181, 624)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(112, 34)
+        Button2.TabIndex = 24
+        Button2.Text = "Cancel"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(309, 624)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(112, 34)
+        Button3.TabIndex = 25
+        Button3.Text = "Clear"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Add_edit
         ' 
         AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(476, 622)
+        ClientSize = New Size(476, 670)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(TextBox6)
         Controls.Add(Label10)
         Controls.Add(Label9)
@@ -271,5 +304,11 @@ Partial Class Add_edit
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class
