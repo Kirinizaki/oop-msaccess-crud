@@ -25,9 +25,10 @@ Public Class Add_edit
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
+        ' Proceed with save logic here
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
         'yung pang clear button'
         Txt_InputLastName.Text = ""
         Txt_InputFirstName.Text = ""
@@ -42,11 +43,12 @@ Public Class Add_edit
         Txt_InputAddress.Text = ""
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
         Dim home As New Home()
         home.Show()
 
         ' Close or hide the current form
         Me.Close() ' closes the current form
     End Sub
+
 End Class
