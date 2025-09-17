@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>oop_msaccess_crud</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>oop_msaccess_crud.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
