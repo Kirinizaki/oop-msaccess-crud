@@ -22,254 +22,279 @@ Partial Class Add_edit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        CheckBox1 = New CheckBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label5 = New Label()
-        ComboBox1 = New ComboBox()
-        DateTimePicker1 = New DateTimePicker()
-        Label4 = New Label()
-        ComboBox2 = New ComboBox()
-        Label6 = New Label()
-        ComboBox4 = New ComboBox()
-        Label7 = New Label()
-        TextBox4 = New TextBox()
-        Label8 = New Label()
-        TextBox5 = New TextBox()
-        Label9 = New Label()
-        Label10 = New Label()
-        TextBox6 = New TextBox()
+        Txt_InputLastName = New TextBox()
+        Txt_InputFirstName = New TextBox()
+        Txt_InputMiddleName = New TextBox()
+        CheckBox_MiddleName = New CheckBox()
+        Lbl_LastName = New Label()
+        Lbl_FirstName = New Label()
+        Lbl_Suffix = New Label()
+        Lbl_MiddleName = New Label()
+        ComboBox_Suffix = New ComboBox()
+        DateTimePicker = New DateTimePicker()
+        Lbl_Birthdate = New Label()
+        ComboBox_Gender = New ComboBox()
+        Lbl_Gender = New Label()
+        ComboBox_CivilStatus = New ComboBox()
+        Lbl_CivilStatus = New Label()
+        Txt_InputNationality = New TextBox()
+        Lbl_Nationality = New Label()
+        Txt_InputContact = New TextBox()
+        Lbl_Contact = New Label()
+        Lbl_Address = New Label()
+        Txt_InputAddress = New TextBox()
         SuspendLayout()
         ' 
-        ' TextBox1
+        ' Txt_InputLastName
         ' 
-        TextBox1.Location = New Point(146, 31)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(318, 31)
-        TextBox1.TabIndex = 0
+        Txt_InputLastName.Location = New Point(117, 25)
+        Txt_InputLastName.Margin = New Padding(2, 2, 2, 2)
+        Txt_InputLastName.Name = "Txt_InputLastName"
+        Txt_InputLastName.Size = New Size(255, 27)
+        Txt_InputLastName.TabIndex = 0
         ' 
-        ' TextBox2
+        ' Txt_InputFirstName
         ' 
-        TextBox2.Location = New Point(146, 79)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(318, 31)
-        TextBox2.TabIndex = 1
+        Txt_InputFirstName.Location = New Point(117, 63)
+        Txt_InputFirstName.Margin = New Padding(2, 2, 2, 2)
+        Txt_InputFirstName.Name = "Txt_InputFirstName"
+        Txt_InputFirstName.Size = New Size(255, 27)
+        Txt_InputFirstName.TabIndex = 1
         ' 
-        ' TextBox3
+        ' Txt_InputMiddleName
         ' 
-        TextBox3.Location = New Point(146, 127)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(318, 31)
-        TextBox3.TabIndex = 2
+        Txt_InputMiddleName.Location = New Point(117, 102)
+        Txt_InputMiddleName.Margin = New Padding(2, 2, 2, 2)
+        Txt_InputMiddleName.Name = "Txt_InputMiddleName"
+        Txt_InputMiddleName.Size = New Size(255, 27)
+        Txt_InputMiddleName.TabIndex = 2
         ' 
-        ' CheckBox1
+        ' CheckBox_MiddleName
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(146, 164)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(174, 29)
-        CheckBox1.TabIndex = 3
-        CheckBox1.Text = "No Middle Name"
-        CheckBox1.UseVisualStyleBackColor = True
+        CheckBox_MiddleName.AutoSize = True
+        CheckBox_MiddleName.Location = New Point(117, 131)
+        CheckBox_MiddleName.Margin = New Padding(2, 2, 2, 2)
+        CheckBox_MiddleName.Name = "CheckBox_MiddleName"
+        CheckBox_MiddleName.Size = New Size(146, 24)
+        CheckBox_MiddleName.TabIndex = 3
+        CheckBox_MiddleName.Text = "No Middle Name"
+        CheckBox_MiddleName.UseVisualStyleBackColor = True
         ' 
-        ' Label1
+        ' Lbl_LastName
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(45, 37)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(99, 25)
-        Label1.TabIndex = 4
-        Label1.Text = "Last Name:"
+        Lbl_LastName.AutoSize = True
+        Lbl_LastName.Location = New Point(36, 30)
+        Lbl_LastName.Margin = New Padding(2, 0, 2, 0)
+        Lbl_LastName.Name = "Lbl_LastName"
+        Lbl_LastName.Size = New Size(82, 20)
+        Lbl_LastName.TabIndex = 4
+        Lbl_LastName.Text = "Last Name:"
         ' 
-        ' Label2
+        ' Lbl_FirstName
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(43, 85)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(101, 25)
-        Label2.TabIndex = 5
-        Label2.Text = "First Name:"
+        Lbl_FirstName.AutoSize = True
+        Lbl_FirstName.Location = New Point(34, 68)
+        Lbl_FirstName.Margin = New Padding(2, 0, 2, 0)
+        Lbl_FirstName.Name = "Lbl_FirstName"
+        Lbl_FirstName.Size = New Size(83, 20)
+        Lbl_FirstName.TabIndex = 5
+        Lbl_FirstName.Text = "First Name:"
         ' 
-        ' Label3
+        ' Lbl_Suffix
         ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(84, 215)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(60, 25)
-        Label3.TabIndex = 6
-        Label3.Text = "Suffix:"
+        Lbl_Suffix.AutoSize = True
+        Lbl_Suffix.Location = New Point(67, 172)
+        Lbl_Suffix.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Suffix.Name = "Lbl_Suffix"
+        Lbl_Suffix.Size = New Size(49, 20)
+        Lbl_Suffix.TabIndex = 6
+        Lbl_Suffix.Text = "Suffix:"
         ' 
-        ' Label5
+        ' Lbl_MiddleName
         ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(21, 133)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(123, 25)
-        Label5.TabIndex = 8
-        Label5.Text = "Middle Name:"
+        Lbl_MiddleName.AutoSize = True
+        Lbl_MiddleName.Location = New Point(17, 106)
+        Lbl_MiddleName.Margin = New Padding(2, 0, 2, 0)
+        Lbl_MiddleName.Name = "Lbl_MiddleName"
+        Lbl_MiddleName.Size = New Size(103, 20)
+        Lbl_MiddleName.TabIndex = 8
+        Lbl_MiddleName.Text = "Middle Name:"
         ' 
-        ' ComboBox1
+        ' ComboBox_Suffix
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(146, 212)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(182, 33)
-        ComboBox1.TabIndex = 9
+        ComboBox_Suffix.FormattingEnabled = True
+        ComboBox_Suffix.Location = New Point(117, 170)
+        ComboBox_Suffix.Margin = New Padding(2, 2, 2, 2)
+        ComboBox_Suffix.Name = "ComboBox_Suffix"
+        ComboBox_Suffix.Size = New Size(146, 28)
+        ComboBox_Suffix.TabIndex = 9
         ' 
-        ' DateTimePicker1
+        ' DateTimePicker
         ' 
-        DateTimePicker1.Location = New Point(146, 263)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(300, 31)
-        DateTimePicker1.TabIndex = 10
+        DateTimePicker.Location = New Point(117, 210)
+        DateTimePicker.Margin = New Padding(2, 2, 2, 2)
+        DateTimePicker.Name = "DateTimePicker"
+        DateTimePicker.Size = New Size(241, 27)
+        DateTimePicker.TabIndex = 10
         ' 
-        ' Label4
+        ' Lbl_Birthdate
         ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(53, 268)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(87, 25)
-        Label4.TabIndex = 11
-        Label4.Text = "Birthdate:"
+        Lbl_Birthdate.AutoSize = True
+        Lbl_Birthdate.Location = New Point(42, 214)
+        Lbl_Birthdate.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Birthdate.Name = "Lbl_Birthdate"
+        Lbl_Birthdate.Size = New Size(73, 20)
+        Lbl_Birthdate.TabIndex = 11
+        Lbl_Birthdate.Text = "Birthdate:"
         ' 
-        ' ComboBox2
+        ' ComboBox_Gender
         ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(146, 313)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(182, 33)
-        ComboBox2.TabIndex = 12
+        ComboBox_Gender.FormattingEnabled = True
+        ComboBox_Gender.Location = New Point(117, 250)
+        ComboBox_Gender.Margin = New Padding(2, 2, 2, 2)
+        ComboBox_Gender.Name = "ComboBox_Gender"
+        ComboBox_Gender.Size = New Size(146, 28)
+        ComboBox_Gender.TabIndex = 12
         ' 
-        ' Label6
+        ' Lbl_Gender
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(67, 316)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(73, 25)
-        Label6.TabIndex = 13
-        Label6.Text = "Gender:"
+        Lbl_Gender.AutoSize = True
+        Lbl_Gender.Location = New Point(54, 253)
+        Lbl_Gender.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Gender.Name = "Lbl_Gender"
+        Lbl_Gender.Size = New Size(60, 20)
+        Lbl_Gender.TabIndex = 13
+        Lbl_Gender.Text = "Gender:"
         ' 
-        ' ComboBox4
+        ' ComboBox_CivilStatus
         ' 
-        ComboBox4.FormattingEnabled = True
-        ComboBox4.Location = New Point(146, 363)
-        ComboBox4.Name = "ComboBox4"
-        ComboBox4.Size = New Size(182, 33)
-        ComboBox4.TabIndex = 15
+        ComboBox_CivilStatus.FormattingEnabled = True
+        ComboBox_CivilStatus.Location = New Point(117, 290)
+        ComboBox_CivilStatus.Margin = New Padding(2, 2, 2, 2)
+        ComboBox_CivilStatus.Name = "ComboBox_CivilStatus"
+        ComboBox_CivilStatus.Size = New Size(146, 28)
+        ComboBox_CivilStatus.TabIndex = 15
         ' 
-        ' Label7
+        ' Lbl_CivilStatus
         ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(39, 366)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(101, 25)
-        Label7.TabIndex = 16
-        Label7.Text = "Civil Status:"
+        Lbl_CivilStatus.AutoSize = True
+        Lbl_CivilStatus.Location = New Point(31, 293)
+        Lbl_CivilStatus.Margin = New Padding(2, 0, 2, 0)
+        Lbl_CivilStatus.Name = "Lbl_CivilStatus"
+        Lbl_CivilStatus.Size = New Size(84, 20)
+        Lbl_CivilStatus.TabIndex = 16
+        Lbl_CivilStatus.Text = "Civil Status:"
         ' 
-        ' TextBox4
+        ' Txt_InputNationality
         ' 
-        TextBox4.Location = New Point(146, 415)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(318, 31)
-        TextBox4.TabIndex = 17
+        Txt_InputNationality.Location = New Point(117, 332)
+        Txt_InputNationality.Margin = New Padding(2, 2, 2, 2)
+        Txt_InputNationality.Name = "Txt_InputNationality"
+        Txt_InputNationality.Size = New Size(255, 27)
+        Txt_InputNationality.TabIndex = 17
         ' 
-        ' Label8
+        ' Lbl_Nationality
         ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(39, 418)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(101, 25)
-        Label8.TabIndex = 18
-        Label8.Text = "Nationality:"
+        Lbl_Nationality.AutoSize = True
+        Lbl_Nationality.Location = New Point(31, 334)
+        Lbl_Nationality.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Nationality.Name = "Lbl_Nationality"
+        Lbl_Nationality.Size = New Size(85, 20)
+        Lbl_Nationality.TabIndex = 18
+        Lbl_Nationality.Text = "Nationality:"
         ' 
-        ' TextBox5
+        ' Txt_InputContact
         ' 
-        TextBox5.Location = New Point(146, 469)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(318, 31)
-        TextBox5.TabIndex = 19
+        Txt_InputContact.Location = New Point(117, 375)
+        Txt_InputContact.Margin = New Padding(2, 2, 2, 2)
+        Txt_InputContact.Name = "Txt_InputContact"
+        Txt_InputContact.Size = New Size(255, 27)
+        Txt_InputContact.TabIndex = 19
         ' 
-        ' Label9
+        ' Lbl_Contact
         ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(30, 472)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(110, 25)
-        Label9.TabIndex = 20
-        Label9.Text = "Contact No.:"
+        Lbl_Contact.AutoSize = True
+        Lbl_Contact.Location = New Point(24, 378)
+        Lbl_Contact.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Contact.Name = "Lbl_Contact"
+        Lbl_Contact.Size = New Size(90, 20)
+        Lbl_Contact.TabIndex = 20
+        Lbl_Contact.Text = "Contact No.:"
         ' 
-        ' Label10
+        ' Lbl_Address
         ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(70, 526)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(70, 25)
-        Label10.TabIndex = 21
-        Label10.Text = "Adress:"
+        Lbl_Address.AutoSize = True
+        Lbl_Address.Location = New Point(56, 421)
+        Lbl_Address.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Address.Name = "Lbl_Address"
+        Lbl_Address.Size = New Size(56, 20)
+        Lbl_Address.TabIndex = 21
+        Lbl_Address.Text = "Adress:"
         ' 
-        ' TextBox6
+        ' Txt_InputAddress
         ' 
-        TextBox6.Location = New Point(146, 523)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(318, 31)
-        TextBox6.TabIndex = 22
+        Txt_InputAddress.Location = New Point(117, 418)
+        Txt_InputAddress.Margin = New Padding(2, 2, 2, 2)
+        Txt_InputAddress.Name = "Txt_InputAddress"
+        Txt_InputAddress.Size = New Size(255, 27)
+        Txt_InputAddress.TabIndex = 22
         ' 
         ' Add_edit
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(476, 622)
-        Controls.Add(TextBox6)
-        Controls.Add(Label10)
-        Controls.Add(Label9)
-        Controls.Add(TextBox5)
-        Controls.Add(Label8)
-        Controls.Add(TextBox4)
-        Controls.Add(Label7)
-        Controls.Add(ComboBox4)
-        Controls.Add(Label6)
-        Controls.Add(ComboBox2)
-        Controls.Add(Label4)
-        Controls.Add(DateTimePicker1)
-        Controls.Add(ComboBox1)
-        Controls.Add(Label5)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
-        Controls.Add(CheckBox1)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        ClientSize = New Size(381, 498)
+        Controls.Add(Txt_InputAddress)
+        Controls.Add(Lbl_Address)
+        Controls.Add(Lbl_Contact)
+        Controls.Add(Txt_InputContact)
+        Controls.Add(Lbl_Nationality)
+        Controls.Add(Txt_InputNationality)
+        Controls.Add(Lbl_CivilStatus)
+        Controls.Add(ComboBox_CivilStatus)
+        Controls.Add(Lbl_Gender)
+        Controls.Add(ComboBox_Gender)
+        Controls.Add(Lbl_Birthdate)
+        Controls.Add(DateTimePicker)
+        Controls.Add(ComboBox_Suffix)
+        Controls.Add(Lbl_MiddleName)
+        Controls.Add(Lbl_Suffix)
+        Controls.Add(Lbl_FirstName)
+        Controls.Add(Lbl_LastName)
+        Controls.Add(CheckBox_MiddleName)
+        Controls.Add(Txt_InputMiddleName)
+        Controls.Add(Txt_InputFirstName)
+        Controls.Add(Txt_InputLastName)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "Add_edit"
         Text = "Regitration"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Txt_InputLastName As TextBox
+    Friend WithEvents Txt_InputFirstName As TextBox
+    Friend WithEvents Txt_InputMiddleName As TextBox
+    Friend WithEvents CheckBox_MiddleName As CheckBox
+    Friend WithEvents Lbl_LastName As Label
+    Friend WithEvents Lbl_FirstName As Label
+    Friend WithEvents Lbl_Suffix As Label
+    Friend WithEvents Lbl_MiddleName As Label
+    Friend WithEvents ComboBox_Suffix As ComboBox
+    Friend WithEvents DateTimePicker As DateTimePicker
+    Friend WithEvents Lbl_Birthdate As Label
+    Friend WithEvents ComboBox_Gender As ComboBox
+    Friend WithEvents Lbl_Gender As Label
+    Friend WithEvents ComboBox_CivilStatus As ComboBox
+    Friend WithEvents Lbl_CivilStatus As Label
+    Friend WithEvents Txt_InputNationality As TextBox
+    Friend WithEvents Lbl_Nationality As Label
+    Friend WithEvents Txt_InputContact As TextBox
+    Friend WithEvents Lbl_Contact As Label
+    Friend WithEvents Lbl_Address As Label
+    Friend WithEvents Txt_InputAddress As TextBox
 
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
