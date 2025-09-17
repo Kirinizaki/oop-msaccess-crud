@@ -1,9 +1,12 @@
 ﻿Imports System.Data.OleDb
+Imports System.IO
 
 Public Class Add_edit
-    Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:/;")
-
+    Dim con As OleDbConnection
     Private Sub Add_edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim dbPath As String = Path.Combine(Application.StartupPath, "..\..\..\data\registration.accdb")
+
+        con = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbPath & ";")
         Try
             con.Open()
             MessageBox.Show("Connected to Access!")
@@ -14,7 +17,4 @@ Public Class Add_edit
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
-    End Sub
 End Class
