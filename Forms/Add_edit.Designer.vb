@@ -37,51 +37,71 @@ Partial Class Add_edit
         Lbl_Gender = New Label()
         ComboBox_CivilStatus = New ComboBox()
         Lbl_CivilStatus = New Label()
-        ComboBox_Nationality = New ComboBox()
+        Txt_InputNationality = New TextBox()
         Lbl_Nationality = New Label()
         Txt_InputContact = New TextBox()
         Lbl_Contact = New Label()
         Lbl_Address = New Label()
         Txt_InputAddress = New TextBox()
         TableLayoutPanel1 = New TableLayoutPanel()
-        Btn_Save = New Button()
-        Btn_Cancel = New Button()
-        Btn_Clear = New Button()
-        Lbl_CountryCode = New Label()
-        Panel_Header = New Panel()
-        Lbl_FormTitle = New Label()
+<<<<<<< HEAD
+        SaveButton = New Button()
+        CancelButton = New Button()
+        ClearButton = New Button()
+=======
+        Button3 = New Button()
+        Button1 = New Button()
+        Button2 = New Button()
+>>>>>>> parent of 93104dc (isang bagsakan na)
         TableLayoutPanel1.SuspendLayout()
-        Panel_Header.SuspendLayout()
         SuspendLayout()
         ' 
         ' Txt_InputLastName
         ' 
-        Txt_InputLastName.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        Txt_InputLastName.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(Txt_InputLastName, 2)
-        Txt_InputLastName.Font = New Font("Segoe UI", 9.0F)
-        Txt_InputLastName.Location = New Point(123, 9)
+<<<<<<< HEAD
+        Txt_InputLastName.Location = New Point(174, 21)
         Txt_InputLastName.Name = "Txt_InputLastName"
-        Txt_InputLastName.Size = New Size(289, 23)
+        Txt_InputLastName.Size = New Size(330, 31)
+=======
+        Txt_InputLastName.Location = New Point(122, 11)
+        Txt_InputLastName.Margin = New Padding(2)
+        Txt_InputLastName.Name = "Txt_InputLastName"
+        Txt_InputLastName.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Txt_InputLastName.TabIndex = 0
         ' 
         ' Txt_InputFirstName
         ' 
-        Txt_InputFirstName.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        Txt_InputFirstName.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(Txt_InputFirstName, 2)
-        Txt_InputFirstName.Font = New Font("Segoe UI", 9.0F)
-        Txt_InputFirstName.Location = New Point(123, 50)
+<<<<<<< HEAD
+        Txt_InputFirstName.Location = New Point(174, 94)
         Txt_InputFirstName.Name = "Txt_InputFirstName"
-        Txt_InputFirstName.Size = New Size(289, 23)
+        Txt_InputFirstName.Size = New Size(330, 31)
+=======
+        Txt_InputFirstName.Location = New Point(122, 54)
+        Txt_InputFirstName.Margin = New Padding(2)
+        Txt_InputFirstName.Name = "Txt_InputFirstName"
+        Txt_InputFirstName.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Txt_InputFirstName.TabIndex = 1
         ' 
         ' Txt_InputMiddleName
         ' 
-        Txt_InputMiddleName.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        Txt_InputMiddleName.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(Txt_InputMiddleName, 2)
-        Txt_InputMiddleName.Font = New Font("Segoe UI", 9.0F)
-        Txt_InputMiddleName.Location = New Point(123, 91)
+<<<<<<< HEAD
+        Txt_InputMiddleName.Location = New Point(174, 167)
         Txt_InputMiddleName.Name = "Txt_InputMiddleName"
-        Txt_InputMiddleName.Size = New Size(289, 23)
+        Txt_InputMiddleName.Size = New Size(330, 31)
+=======
+        Txt_InputMiddleName.Location = New Point(122, 97)
+        Txt_InputMiddleName.Margin = New Padding(2)
+        Txt_InputMiddleName.Name = "Txt_InputMiddleName"
+        Txt_InputMiddleName.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Txt_InputMiddleName.TabIndex = 2
         ' 
         ' CheckBox_MiddleName
@@ -90,11 +110,16 @@ Partial Class Add_edit
         CheckBox_MiddleName.CheckAlign = ContentAlignment.TopLeft
         TableLayoutPanel1.SetColumnSpan(CheckBox_MiddleName, 2)
         CheckBox_MiddleName.Dock = DockStyle.Fill
-        CheckBox_MiddleName.Font = New Font("Segoe UI", 9.0F)
-        CheckBox_MiddleName.ForeColor = Color.Black
-        CheckBox_MiddleName.Location = New Point(123, 126)
+<<<<<<< HEAD
+        CheckBox_MiddleName.Location = New Point(174, 222)
         CheckBox_MiddleName.Name = "CheckBox_MiddleName"
-        CheckBox_MiddleName.Size = New Size(289, 35)
+        CheckBox_MiddleName.Size = New Size(444, 67)
+=======
+        CheckBox_MiddleName.Location = New Point(122, 131)
+        CheckBox_MiddleName.Margin = New Padding(2)
+        CheckBox_MiddleName.Name = "CheckBox_MiddleName"
+        CheckBox_MiddleName.Size = New Size(311, 39)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         CheckBox_MiddleName.TabIndex = 3
         CheckBox_MiddleName.Text = "No Middle Name"
         CheckBox_MiddleName.TextAlign = ContentAlignment.TopLeft
@@ -104,37 +129,52 @@ Partial Class Add_edit
         ' 
         Lbl_LastName.AutoSize = True
         Lbl_LastName.Dock = DockStyle.Fill
-        Lbl_LastName.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_LastName.ForeColor = Color.Black
+<<<<<<< HEAD
         Lbl_LastName.Location = New Point(3, 0)
         Lbl_LastName.Name = "Lbl_LastName"
-        Lbl_LastName.Size = New Size(114, 41)
+        Lbl_LastName.Size = New Size(165, 73)
+=======
+        Lbl_LastName.Location = New Point(2, 0)
+        Lbl_LastName.Margin = New Padding(2, 0, 2, 0)
+        Lbl_LastName.Name = "Lbl_LastName"
+        Lbl_LastName.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_LastName.TabIndex = 4
-        Lbl_LastName.Text = "Last Name: *"
+        Lbl_LastName.Text = "Last Name:"
         Lbl_LastName.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Lbl_FirstName
         ' 
         Lbl_FirstName.AutoSize = True
         Lbl_FirstName.Dock = DockStyle.Fill
-        Lbl_FirstName.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_FirstName.ForeColor = Color.Black
-        Lbl_FirstName.Location = New Point(3, 41)
+<<<<<<< HEAD
+        Lbl_FirstName.Location = New Point(3, 73)
         Lbl_FirstName.Name = "Lbl_FirstName"
-        Lbl_FirstName.Size = New Size(114, 41)
+        Lbl_FirstName.Size = New Size(165, 73)
+=======
+        Lbl_FirstName.Location = New Point(2, 43)
+        Lbl_FirstName.Margin = New Padding(2, 0, 2, 0)
+        Lbl_FirstName.Name = "Lbl_FirstName"
+        Lbl_FirstName.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_FirstName.TabIndex = 5
-        Lbl_FirstName.Text = "First Name: *"
+        Lbl_FirstName.Text = "First Name:"
         Lbl_FirstName.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Lbl_Suffix
         ' 
         Lbl_Suffix.AutoSize = True
         Lbl_Suffix.Dock = DockStyle.Fill
-        Lbl_Suffix.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_Suffix.ForeColor = Color.Black
-        Lbl_Suffix.Location = New Point(3, 164)
+<<<<<<< HEAD
+        Lbl_Suffix.Location = New Point(3, 292)
         Lbl_Suffix.Name = "Lbl_Suffix"
-        Lbl_Suffix.Size = New Size(114, 29)
+        Lbl_Suffix.Size = New Size(165, 39)
+=======
+        Lbl_Suffix.Location = New Point(2, 172)
+        Lbl_Suffix.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Suffix.Name = "Lbl_Suffix"
+        Lbl_Suffix.Size = New Size(116, 27)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_Suffix.TabIndex = 6
         Lbl_Suffix.Text = "Suffix:"
         Lbl_Suffix.TextAlign = ContentAlignment.MiddleRight
@@ -143,195 +183,280 @@ Partial Class Add_edit
         ' 
         Lbl_MiddleName.AutoSize = True
         Lbl_MiddleName.Dock = DockStyle.Fill
-        Lbl_MiddleName.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_MiddleName.ForeColor = Color.Black
-        Lbl_MiddleName.Location = New Point(3, 82)
+<<<<<<< HEAD
+        Lbl_MiddleName.Location = New Point(3, 146)
         Lbl_MiddleName.Name = "Lbl_MiddleName"
-        Lbl_MiddleName.Size = New Size(114, 41)
+        Lbl_MiddleName.Size = New Size(165, 73)
+=======
+        Lbl_MiddleName.Location = New Point(2, 86)
+        Lbl_MiddleName.Margin = New Padding(2, 0, 2, 0)
+        Lbl_MiddleName.Name = "Lbl_MiddleName"
+        Lbl_MiddleName.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_MiddleName.TabIndex = 8
         Lbl_MiddleName.Text = "Middle Name:"
         Lbl_MiddleName.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' ComboBox_Suffix
         ' 
-        ComboBox_Suffix.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        ComboBox_Suffix.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(ComboBox_Suffix, 2)
-        ComboBox_Suffix.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox_Suffix.Font = New Font("Segoe UI", 9.0F)
         ComboBox_Suffix.FormattingEnabled = True
-        ComboBox_Suffix.Location = New Point(123, 167)
+<<<<<<< HEAD
+        ComboBox_Suffix.Location = New Point(174, 295)
         ComboBox_Suffix.Name = "ComboBox_Suffix"
-        ComboBox_Suffix.Size = New Size(289, 23)
+        ComboBox_Suffix.Size = New Size(330, 33)
+=======
+        ComboBox_Suffix.Location = New Point(122, 174)
+        ComboBox_Suffix.Margin = New Padding(2)
+        ComboBox_Suffix.Name = "ComboBox_Suffix"
+        ComboBox_Suffix.Size = New Size(232, 23)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         ComboBox_Suffix.TabIndex = 9
         ' 
         ' DateTimePicker
         ' 
-        DateTimePicker.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        DateTimePicker.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(DateTimePicker, 2)
-        DateTimePicker.Font = New Font("Segoe UI", 9.0F)
-        DateTimePicker.Location = New Point(123, 202)
+<<<<<<< HEAD
+        DateTimePicker.Location = New Point(174, 352)
         DateTimePicker.Name = "DateTimePicker"
-        DateTimePicker.Size = New Size(289, 23)
+        DateTimePicker.Size = New Size(330, 31)
+=======
+        DateTimePicker.Location = New Point(122, 210)
+        DateTimePicker.Margin = New Padding(2)
+        DateTimePicker.Name = "DateTimePicker"
+        DateTimePicker.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         DateTimePicker.TabIndex = 10
         ' 
         ' Lbl_Birthdate
         ' 
         Lbl_Birthdate.AutoSize = True
         Lbl_Birthdate.Dock = DockStyle.Fill
-        Lbl_Birthdate.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_Birthdate.ForeColor = Color.Black
-        Lbl_Birthdate.Location = New Point(3, 193)
+<<<<<<< HEAD
+        Lbl_Birthdate.Location = New Point(3, 331)
         Lbl_Birthdate.Name = "Lbl_Birthdate"
-        Lbl_Birthdate.Size = New Size(114, 41)
+        Lbl_Birthdate.Size = New Size(165, 73)
+=======
+        Lbl_Birthdate.Location = New Point(2, 199)
+        Lbl_Birthdate.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Birthdate.Name = "Lbl_Birthdate"
+        Lbl_Birthdate.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_Birthdate.TabIndex = 11
-        Lbl_Birthdate.Text = "Birthdate: *"
+        Lbl_Birthdate.Text = "Birthdate:"
         Lbl_Birthdate.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' ComboBox_Gender
         ' 
-        ComboBox_Gender.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        ComboBox_Gender.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(ComboBox_Gender, 2)
-        ComboBox_Gender.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox_Gender.Font = New Font("Segoe UI", 9.0F)
         ComboBox_Gender.FormattingEnabled = True
-        ComboBox_Gender.Location = New Point(123, 243)
+<<<<<<< HEAD
+        ComboBox_Gender.Location = New Point(174, 424)
         ComboBox_Gender.Name = "ComboBox_Gender"
-        ComboBox_Gender.Size = New Size(289, 23)
+        ComboBox_Gender.Size = New Size(330, 33)
+=======
+        ComboBox_Gender.Location = New Point(122, 252)
+        ComboBox_Gender.Margin = New Padding(2)
+        ComboBox_Gender.Name = "ComboBox_Gender"
+        ComboBox_Gender.Size = New Size(232, 23)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         ComboBox_Gender.TabIndex = 12
         ' 
         ' Lbl_Gender
         ' 
         Lbl_Gender.AutoSize = True
         Lbl_Gender.Dock = DockStyle.Fill
-        Lbl_Gender.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_Gender.ForeColor = Color.Black
-        Lbl_Gender.Location = New Point(3, 234)
+<<<<<<< HEAD
+        Lbl_Gender.Location = New Point(3, 404)
         Lbl_Gender.Name = "Lbl_Gender"
-        Lbl_Gender.Size = New Size(114, 41)
+        Lbl_Gender.Size = New Size(165, 73)
+=======
+        Lbl_Gender.Location = New Point(2, 242)
+        Lbl_Gender.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Gender.Name = "Lbl_Gender"
+        Lbl_Gender.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_Gender.TabIndex = 13
         Lbl_Gender.Text = "Gender:"
         Lbl_Gender.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' ComboBox_CivilStatus
         ' 
-        ComboBox_CivilStatus.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        ComboBox_CivilStatus.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(ComboBox_CivilStatus, 2)
-        ComboBox_CivilStatus.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox_CivilStatus.Font = New Font("Segoe UI", 9.0F)
         ComboBox_CivilStatus.FormattingEnabled = True
-        ComboBox_CivilStatus.Location = New Point(123, 278)
+<<<<<<< HEAD
+        ComboBox_CivilStatus.Location = New Point(174, 480)
         ComboBox_CivilStatus.Name = "ComboBox_CivilStatus"
-        ComboBox_CivilStatus.Size = New Size(289, 23)
+        ComboBox_CivilStatus.Size = New Size(330, 33)
+=======
+        ComboBox_CivilStatus.Location = New Point(122, 287)
+        ComboBox_CivilStatus.Margin = New Padding(2)
+        ComboBox_CivilStatus.Name = "ComboBox_CivilStatus"
+        ComboBox_CivilStatus.Size = New Size(232, 23)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         ComboBox_CivilStatus.TabIndex = 15
         ' 
         ' Lbl_CivilStatus
         ' 
         Lbl_CivilStatus.AutoSize = True
         Lbl_CivilStatus.Dock = DockStyle.Fill
-        Lbl_CivilStatus.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_CivilStatus.ForeColor = Color.Black
-        Lbl_CivilStatus.Location = New Point(3, 275)
+<<<<<<< HEAD
+        Lbl_CivilStatus.Location = New Point(3, 477)
         Lbl_CivilStatus.Name = "Lbl_CivilStatus"
-        Lbl_CivilStatus.Size = New Size(114, 29)
+        Lbl_CivilStatus.Size = New Size(165, 39)
+=======
+        Lbl_CivilStatus.Location = New Point(2, 285)
+        Lbl_CivilStatus.Margin = New Padding(2, 0, 2, 0)
+        Lbl_CivilStatus.Name = "Lbl_CivilStatus"
+        Lbl_CivilStatus.Size = New Size(116, 27)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_CivilStatus.TabIndex = 16
         Lbl_CivilStatus.Text = "Civil Status:"
         Lbl_CivilStatus.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' ComboBox_Nationality
+        ' Txt_InputNationality
         ' 
-        ComboBox_Nationality.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        TableLayoutPanel1.SetColumnSpan(ComboBox_Nationality, 2)
-        ComboBox_Nationality.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox_Nationality.Font = New Font("Segoe UI", 9.0F)
-        ComboBox_Nationality.FormattingEnabled = True
-        ComboBox_Nationality.Location = New Point(123, 313)
-        ComboBox_Nationality.Name = "ComboBox_Nationality"
-        ComboBox_Nationality.Size = New Size(289, 23)
-        ComboBox_Nationality.TabIndex = 17
+        Txt_InputNationality.Anchor = AnchorStyles.Left
+        TableLayoutPanel1.SetColumnSpan(Txt_InputNationality, 2)
+<<<<<<< HEAD
+        Txt_InputNationality.Location = New Point(174, 537)
+        Txt_InputNationality.Name = "Txt_InputNationality"
+        Txt_InputNationality.Size = New Size(330, 31)
+=======
+        Txt_InputNationality.Location = New Point(122, 323)
+        Txt_InputNationality.Margin = New Padding(2)
+        Txt_InputNationality.Name = "Txt_InputNationality"
+        Txt_InputNationality.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
+        Txt_InputNationality.TabIndex = 17
         ' 
         ' Lbl_Nationality
         ' 
         Lbl_Nationality.AutoSize = True
         Lbl_Nationality.Dock = DockStyle.Fill
-        Lbl_Nationality.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_Nationality.ForeColor = Color.Black
-        Lbl_Nationality.Location = New Point(3, 304)
+<<<<<<< HEAD
+        Lbl_Nationality.Location = New Point(3, 516)
         Lbl_Nationality.Name = "Lbl_Nationality"
-        Lbl_Nationality.Size = New Size(114, 41)
+        Lbl_Nationality.Size = New Size(165, 73)
+=======
+        Lbl_Nationality.Location = New Point(2, 312)
+        Lbl_Nationality.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Nationality.Name = "Lbl_Nationality"
+        Lbl_Nationality.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_Nationality.TabIndex = 18
-        Lbl_Nationality.Text = "Nationality: *"
+        Lbl_Nationality.Text = "Nationality:"
         Lbl_Nationality.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Txt_InputContact
         ' 
-        Txt_InputContact.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        Txt_InputContact.Font = New Font("Segoe UI", 9.0F)
-        Txt_InputContact.Location = New Point(279, 354)
+        Txt_InputContact.Anchor = AnchorStyles.Left
+        TableLayoutPanel1.SetColumnSpan(Txt_InputContact, 2)
+<<<<<<< HEAD
+        Txt_InputContact.Location = New Point(174, 610)
         Txt_InputContact.Name = "Txt_InputContact"
-        Txt_InputContact.Size = New Size(133, 23)
+        Txt_InputContact.Size = New Size(330, 31)
+=======
+        Txt_InputContact.Location = New Point(122, 366)
+        Txt_InputContact.Margin = New Padding(2)
+        Txt_InputContact.Name = "Txt_InputContact"
+        Txt_InputContact.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Txt_InputContact.TabIndex = 19
         ' 
         ' Lbl_Contact
         ' 
         Lbl_Contact.AutoSize = True
         Lbl_Contact.Dock = DockStyle.Fill
-        Lbl_Contact.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_Contact.ForeColor = Color.Black
-        Lbl_Contact.Location = New Point(3, 345)
+<<<<<<< HEAD
+        Lbl_Contact.Location = New Point(3, 589)
         Lbl_Contact.Name = "Lbl_Contact"
-        Lbl_Contact.Size = New Size(114, 41)
+        Lbl_Contact.Size = New Size(165, 73)
+=======
+        Lbl_Contact.Location = New Point(2, 355)
+        Lbl_Contact.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Contact.Name = "Lbl_Contact"
+        Lbl_Contact.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_Contact.TabIndex = 20
-        Lbl_Contact.Text = "Contact No.: *"
+        Lbl_Contact.Text = "Contact No.:"
         Lbl_Contact.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Lbl_Address
         ' 
         Lbl_Address.AutoSize = True
         Lbl_Address.Dock = DockStyle.Fill
-        Lbl_Address.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lbl_Address.ForeColor = Color.Black
-        Lbl_Address.Location = New Point(3, 386)
+<<<<<<< HEAD
+        Lbl_Address.Location = New Point(3, 662)
         Lbl_Address.Name = "Lbl_Address"
-        Lbl_Address.Size = New Size(114, 80)
+        Lbl_Address.Size = New Size(165, 73)
+=======
+        Lbl_Address.Location = New Point(2, 398)
+        Lbl_Address.Margin = New Padding(2, 0, 2, 0)
+        Lbl_Address.Name = "Lbl_Address"
+        Lbl_Address.Size = New Size(116, 43)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Lbl_Address.TabIndex = 21
-        Lbl_Address.Text = "Address: *"
+        Lbl_Address.Text = "Adress:"
         Lbl_Address.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Txt_InputAddress
         ' 
-        Txt_InputAddress.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        Txt_InputAddress.Anchor = AnchorStyles.Left
         TableLayoutPanel1.SetColumnSpan(Txt_InputAddress, 2)
-        Txt_InputAddress.Font = New Font("Segoe UI", 9.0F)
-        Txt_InputAddress.Location = New Point(123, 389)
-        Txt_InputAddress.Multiline = True
+<<<<<<< HEAD
+        Txt_InputAddress.Location = New Point(174, 683)
         Txt_InputAddress.Name = "Txt_InputAddress"
-        Txt_InputAddress.Size = New Size(289, 74)
+        Txt_InputAddress.Size = New Size(330, 31)
+=======
+        Txt_InputAddress.Location = New Point(122, 409)
+        Txt_InputAddress.Margin = New Padding(2)
+        Txt_InputAddress.Name = "Txt_InputAddress"
+        Txt_InputAddress.Size = New Size(232, 21)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Txt_InputAddress.TabIndex = 22
         ' 
         ' TableLayoutPanel1
         ' 
         TableLayoutPanel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        TableLayoutPanel1.BackColor = Color.White
         TableLayoutPanel1.ColumnCount = 3
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 28.9621887F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 37.6508446F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3869667F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.6366673F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 39.03F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+<<<<<<< HEAD
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 26.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 26.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 26.0F))
         TableLayoutPanel1.Controls.Add(Lbl_LastName, 0, 0)
-        TableLayoutPanel1.Controls.Add(Btn_Save, 2, 12)
+        TableLayoutPanel1.Controls.Add(SaveButton, 2, 12)
         TableLayoutPanel1.Controls.Add(Lbl_FirstName, 0, 1)
         TableLayoutPanel1.Controls.Add(Lbl_MiddleName, 0, 2)
-        TableLayoutPanel1.Controls.Add(Btn_Cancel, 0, 12)
+        TableLayoutPanel1.Controls.Add(CancelButton, 0, 12)
+=======
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 18F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 18F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 18F))
+        TableLayoutPanel1.Controls.Add(Lbl_LastName, 0, 0)
+        TableLayoutPanel1.Controls.Add(Button3, 2, 12)
+        TableLayoutPanel1.Controls.Add(Lbl_FirstName, 0, 1)
+        TableLayoutPanel1.Controls.Add(Lbl_MiddleName, 0, 2)
+        TableLayoutPanel1.Controls.Add(Button1, 0, 12)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         TableLayoutPanel1.Controls.Add(Txt_InputMiddleName, 1, 2)
         TableLayoutPanel1.Controls.Add(Lbl_Address, 0, 11)
         TableLayoutPanel1.Controls.Add(Txt_InputAddress, 1, 11)
         TableLayoutPanel1.Controls.Add(Lbl_Suffix, 0, 4)
         TableLayoutPanel1.Controls.Add(Lbl_Contact, 0, 10)
         TableLayoutPanel1.Controls.Add(ComboBox_Suffix, 1, 4)
-        TableLayoutPanel1.Controls.Add(Txt_InputContact, 2, 10)
+        TableLayoutPanel1.Controls.Add(Txt_InputContact, 1, 10)
         TableLayoutPanel1.Controls.Add(Lbl_Birthdate, 0, 5)
         TableLayoutPanel1.Controls.Add(Lbl_Nationality, 0, 9)
         TableLayoutPanel1.Controls.Add(DateTimePicker, 1, 5)
-        TableLayoutPanel1.Controls.Add(ComboBox_Nationality, 1, 9)
+        TableLayoutPanel1.Controls.Add(Txt_InputNationality, 1, 9)
         TableLayoutPanel1.Controls.Add(Lbl_Gender, 0, 6)
         TableLayoutPanel1.Controls.Add(Lbl_CivilStatus, 0, 8)
         TableLayoutPanel1.Controls.Add(ComboBox_Gender, 1, 6)
@@ -339,126 +464,119 @@ Partial Class Add_edit
         TableLayoutPanel1.Controls.Add(Txt_InputFirstName, 1, 1)
         TableLayoutPanel1.Controls.Add(Txt_InputLastName, 1, 0)
         TableLayoutPanel1.Controls.Add(CheckBox_MiddleName, 1, 3)
-        TableLayoutPanel1.Controls.Add(Btn_Clear, 1, 12)
-        TableLayoutPanel1.Controls.Add(Lbl_CountryCode, 1, 10)
-        TableLayoutPanel1.Location = New Point(20, 64)
-        TableLayoutPanel1.Margin = New Padding(4)
+<<<<<<< HEAD
+        TableLayoutPanel1.Controls.Add(ClearButton, 1, 12)
+        TableLayoutPanel1.Location = New Point(0, -3)
+        TableLayoutPanel1.Margin = New Padding(4, 3, 4, 3)
+=======
+        TableLayoutPanel1.Controls.Add(Button2, 1, 12)
+        TableLayoutPanel1.Location = New Point(0, -2)
+        TableLayoutPanel1.Margin = New Padding(3, 2, 3, 2)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 13
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle())
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle())
         TableLayoutPanel1.RowStyles.Add(New RowStyle())
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 17.6056347F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 9.154929F))
-        TableLayoutPanel1.Size = New Size(415, 513)
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10.0F))
+<<<<<<< HEAD
+        TableLayoutPanel1.Size = New Size(621, 813)
         TableLayoutPanel1.TabIndex = 0
         ' 
-        ' Btn_Save
+        ' SaveButton
         ' 
-        Btn_Save.Anchor = AnchorStyles.None
-        Btn_Save.BackColor = Color.White
-        Btn_Save.FlatStyle = FlatStyle.Flat
-        Btn_Save.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Btn_Save.ForeColor = Color.Black
-        Btn_Save.Location = New Point(303, 473)
-        Btn_Save.Name = "Btn_Save"
-        Btn_Save.Size = New Size(85, 32)
-        Btn_Save.TabIndex = 25
-        Btn_Save.Text = "Save"
-        Btn_Save.UseVisualStyleBackColor = True
+        SaveButton.Anchor = AnchorStyles.None
+        SaveButton.Location = New Point(452, 749)
+        SaveButton.Name = "SaveButton"
+        SaveButton.Size = New Size(130, 50)
+        SaveButton.TabIndex = 25
+        SaveButton.Text = "Save"
+        SaveButton.UseVisualStyleBackColor = True
         ' 
-        ' Btn_Cancel
+        ' CancelButton
         ' 
-        Btn_Cancel.Anchor = AnchorStyles.None
-        Btn_Cancel.BackColor = Color.White
-        Btn_Cancel.FlatStyle = FlatStyle.Flat
-        Btn_Cancel.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Btn_Cancel.ForeColor = Color.Black
-        Btn_Cancel.Location = New Point(17, 473)
-        Btn_Cancel.Name = "Btn_Cancel"
-        Btn_Cancel.Size = New Size(85, 32)
-        Btn_Cancel.TabIndex = 23
-        Btn_Cancel.Text = "Cancel"
-        Btn_Cancel.UseVisualStyleBackColor = True
+        CancelButton.Anchor = AnchorStyles.None
+        CancelButton.Location = New Point(17, 749)
+        CancelButton.Name = "CancelButton"
+        CancelButton.Size = New Size(136, 50)
+        CancelButton.TabIndex = 23
+        CancelButton.Text = "Cancel"
+        CancelButton.UseVisualStyleBackColor = True
         ' 
-        ' Btn_Clear
+        ' ClearButton
         ' 
-        Btn_Clear.Anchor = AnchorStyles.None
-        Btn_Clear.BackColor = Color.White
-        Btn_Clear.FlatStyle = FlatStyle.Flat
-        Btn_Clear.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Btn_Clear.ForeColor = Color.Black
-        Btn_Clear.Location = New Point(155, 473)
-        Btn_Clear.Name = "Btn_Clear"
-        Btn_Clear.Size = New Size(85, 32)
-        Btn_Clear.TabIndex = 24
-        Btn_Clear.Text = "Clear"
-        Btn_Clear.UseVisualStyleBackColor = True
-        ' 
-        ' Lbl_CountryCode
-        ' 
-        Lbl_CountryCode.AutoSize = True
-        Lbl_CountryCode.BackColor = Color.White
-        Lbl_CountryCode.BorderStyle = BorderStyle.FixedSingle
-        Lbl_CountryCode.Dock = DockStyle.Fill
-        Lbl_CountryCode.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        Lbl_CountryCode.ForeColor = Color.Black
-        Lbl_CountryCode.Location = New Point(123, 348)
-        Lbl_CountryCode.Margin = New Padding(3)
-        Lbl_CountryCode.Name = "Lbl_CountryCode"
-        Lbl_CountryCode.Padding = New Padding(5)
-        Lbl_CountryCode.Size = New Size(150, 35)
-        Lbl_CountryCode.TabIndex = 26
-        Lbl_CountryCode.Text = "+63"
-        Lbl_CountryCode.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Panel_Header
-        ' 
-        Panel_Header.BackColor = Color.White
-        Panel_Header.Controls.Add(Lbl_FormTitle)
-        Panel_Header.Dock = DockStyle.Top
-        Panel_Header.Location = New Point(0, 0)
-        Panel_Header.Name = "Panel_Header"
-        Panel_Header.Size = New Size(455, 60)
-        Panel_Header.TabIndex = 27
-        ' 
-        ' Lbl_FormTitle
-        ' 
-        Lbl_FormTitle.Dock = DockStyle.Fill
-        Lbl_FormTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_FormTitle.ForeColor = Color.Black
-        Lbl_FormTitle.Location = New Point(0, 0)
-        Lbl_FormTitle.Name = "Lbl_FormTitle"
-        Lbl_FormTitle.Size = New Size(455, 60)
-        Lbl_FormTitle.TabIndex = 0
-        Lbl_FormTitle.Text = "Registration Form"
-        Lbl_FormTitle.TextAlign = ContentAlignment.MiddleCenter
+        ClearButton.Anchor = AnchorStyles.None
+        ClearButton.Location = New Point(212, 749)
+        ClearButton.Name = "ClearButton"
+        ClearButton.Size = New Size(160, 50)
+        ClearButton.TabIndex = 24
+        ClearButton.Text = "Clear"
+        ClearButton.UseVisualStyleBackColor = True
         ' 
         ' Add_edit
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
-        ClientSize = New Size(455, 590)
-        Controls.Add(Panel_Header)
+        ClientSize = New Size(624, 812)
         Controls.Add(TableLayoutPanel1)
-        Font = New Font("Segoe UI", 9.0F)
-        FormBorderStyle = FormBorderStyle.FixedDialog
-        MaximizeBox = False
+=======
+        TableLayoutPanel1.Size = New Size(435, 488)
+        TableLayoutPanel1.TabIndex = 0
+        ' 
+        ' Button3
+        ' 
+        Button3.Anchor = AnchorStyles.None
+        Button3.Location = New Point(316, 449)
+        Button3.Margin = New Padding(2)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(91, 30)
+        Button3.TabIndex = 25
+        Button3.Text = "Save"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Anchor = AnchorStyles.None
+        Button1.Location = New Point(12, 449)
+        Button1.Margin = New Padding(2)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(95, 30)
+        Button1.TabIndex = 23
+        Button1.Text = "Cancel"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.None
+        Button2.Location = New Point(148, 449)
+        Button2.Margin = New Padding(2)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(112, 30)
+        Button2.TabIndex = 24
+        Button2.Text = "Clear"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Add_edit
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(437, 487)
+        Controls.Add(TableLayoutPanel1)
+        Margin = New Padding(2)
+>>>>>>> parent of 93104dc (isang bagsakan na)
         Name = "Add_edit"
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Registration"
+        Text = "Regitration"
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()
-        Panel_Header.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -477,21 +595,25 @@ Partial Class Add_edit
     Friend WithEvents Lbl_Gender As Label
     Friend WithEvents ComboBox_CivilStatus As ComboBox
     Friend WithEvents Lbl_CivilStatus As Label
-    Friend WithEvents ComboBox_Nationality As ComboBox
+    Friend WithEvents Txt_InputNationality As TextBox
     Friend WithEvents Lbl_Nationality As Label
     Friend WithEvents Txt_InputContact As TextBox
     Friend WithEvents Lbl_Contact As Label
     Friend WithEvents Lbl_Address As Label
     Friend WithEvents Txt_InputAddress As TextBox
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents Btn_Clear As Button
-    Friend WithEvents Btn_Save As Button
-    Friend WithEvents Btn_Cancel As Button
-    Friend WithEvents Lbl_CountryCode As Label
-    Friend WithEvents Panel_Header As Panel
-    Friend WithEvents Lbl_FormTitle As Label
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+<<<<<<< HEAD
+    Friend WithEvents ClearButton As Button
+    Friend WithEvents SaveButton As Button
+    Friend WithEvents CancelButton As Button
+=======
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button1 As Button
+>>>>>>> parent of 93104dc (isang bagsakan na)
 End Class
