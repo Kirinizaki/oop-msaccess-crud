@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.oop_msaccess_crud.Home
+            Me.MainForm = Global.oop_msaccess_crud.HomePage
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
