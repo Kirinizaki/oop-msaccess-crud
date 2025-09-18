@@ -234,13 +234,15 @@ Partial Class Add_edit
         ' 
         ' ComboBox_Nationality
         ' 
-        Txt_InputNationality.Anchor = AnchorStyles.Left
-        TableLayoutPanel1.SetColumnSpan(Txt_InputNationality, 2)
-        Txt_InputNationality.Location = New Point(122, 323)
-        Txt_InputNationality.Margin = New Padding(2)
-        Txt_InputNationality.Name = "Txt_InputNationality"
-        Txt_InputNationality.Size = New Size(232, 21)
-        Txt_InputNationality.TabIndex = 17
+        ComboBox_Nationality.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        TableLayoutPanel1.SetColumnSpan(ComboBox_Nationality, 2)
+        ComboBox_Nationality.Location = New Point(122, 323)
+        ComboBox_Nationality.Margin = New Padding(2)
+        ComboBox_Nationality.Name = "ComboBox_Nationality"
+        ComboBox_Nationality.Size = New Size(232, 21)
+        ComboBox_Nationality.TabIndex = 17
+        ComboBox_Nationality.DropDownStyle = ComboBoxStyle.DropDownList
+
         ' 
         ' Lbl_Nationality
         ' 
@@ -310,7 +312,7 @@ Partial Class Add_edit
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 18.0F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 18.0F))
         TableLayoutPanel1.Controls.Add(Lbl_LastName, 0, 0)
-        TableLayoutPanel1.Controls.Add(Button3, 2, 12)
+        'TableLayoutPanel1.Controls.Add(Button3, 2, 12)
         TableLayoutPanel1.Controls.Add(Lbl_FirstName, 0, 1)
         TableLayoutPanel1.Controls.Add(Lbl_MiddleName, 0, 2)
         TableLayoutPanel1.Controls.Add(Button1, 0, 12)
@@ -435,7 +437,6 @@ Partial Class Add_edit
 
     End Sub
 
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
