@@ -121,8 +121,6 @@ Public Class DatabaseHelper
                     End Using
                 End Using
 
-                MessageBox.Show("Record added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
             Catch ex As Exception
                 MessageBox.Show($"Error adding record: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try

@@ -134,9 +134,9 @@ Public Class Registration
             If String.IsNullOrWhiteSpace(value) Then
                 Throw New ArgumentException("Gender is required.")
             End If
-            Dim validGenders = {"Male", "Female", "Other"}
+            Dim validGenders = {"Male", "Female", "Non-binary", "Prefer not to say"}
             If Not validGenders.Contains(value) Then
-                Throw New ArgumentException("Gender must be Male, Female, or Other.")
+                Throw New ArgumentException("Gender must be Male, Female, Non-binary, or Prefer not to say.")
             End If
             _gender = value
         End Set
@@ -149,7 +149,7 @@ Public Class Registration
         End Get
         Set(value As String)
             If Not String.IsNullOrWhiteSpace(value) Then
-                Dim validStatuses = {"Single", "Married", "Divorced", "Widowed", "Separated"}
+                Dim validStatuses = {"Single", "Married", "Divorced", "Widowed", "Separated", "Annulled"}
                 If Not validStatuses.Contains(value) Then
                     Throw New ArgumentException("Civil status must be Single, Married, Divorced, Widowed, or Separated.")
                 End If

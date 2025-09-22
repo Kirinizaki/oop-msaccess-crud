@@ -200,9 +200,24 @@
 
     Private Sub Btn_Edit_Click(sender As Object, e As EventArgs) Handles Btn_Edit.Click
         If currentRecord IsNot Nothing Then
-            ' Close this form and open edit form
-            Me.DialogResult = DialogResult.OK
+            ' Close this detail form first
             Me.Close()
+
+            ' Find the parent form (HomePage) and hide it, or create new one if needed
+            Dim homeForm As HomePage = Nothing
+            For Each form As Form In Application.OpenForms
+                If TypeOf form Is HomePage Then
+                    homeForm = CType(form, HomePage)
+                    Exit For
+                End If
+            Next
+
+            ' If no HomePage exists, create a new one but don't show it yet
+            If homeForm Is Nothing Then
+                homeForm = New HomePage()
+            End If
+
+            homeForm.Hide()
 
             ' Open edit form
             Dim editForm As New Add_edit(currentRecord)

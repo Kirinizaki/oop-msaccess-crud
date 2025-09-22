@@ -176,7 +176,15 @@ Public Class Add_edit
             Txt_InputMiddleName.Text = currentRecord.MiddleName
             CheckBox_MiddleName.Checked = currentRecord.HasMiddleName
             DateTimePicker.Value = currentRecord.BirthDate
-            Txt_InputContact.Text = currentRecord.ContactInfo
+            Dim contactInfo As String = currentRecord.ContactInfo
+            If contactInfo.StartsWith("+") Then
+                ' Find the dash and extract everything after it
+                Dim dashIndex As Integer = contactInfo.IndexOf("-")
+                If dashIndex > 0 AndAlso dashIndex < contactInfo.Length - 1 Then
+                    contactInfo = contactInfo.Substring(dashIndex + 1)
+                End If
+            End If
+            Txt_InputContact.Text = contactInfo
             Txt_InputAddress.Text = currentRecord.Address
 
             ' Set nationality and update country code
@@ -284,20 +292,27 @@ Public Class Add_edit
             Dim success As Boolean = False
             If isEditMode Then
                 success = DatabaseHelper.UpdateRecord(registration)
-                If success Then
-                    MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                End If
+
             Else
                 Dim newId As Integer = DatabaseHelper.AddRecord(registration)
                 success = newId > 0
-                If success Then
-                    MessageBox.Show("Record added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                End If
+
             End If
 
             If success Then
-                ' Return to main form
-                Dim home As New HomePage()
+                ' Find existing home form or create new one
+                Dim home As HomePage = Nothing
+                For Each form As Form In Application.OpenForms
+                    If TypeOf form Is HomePage Then
+                        home = CType(form, HomePage)
+                        Exit For
+                    End If
+                Next
+
+                If home Is Nothing Then
+                    home = New HomePage()
+                End If
+
                 home.Show()
                 Me.Close()
             End If
@@ -335,7 +350,19 @@ Public Class Add_edit
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to cancel? Any unsaved changes will be lost.", "Cancel", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
-            Dim home As New HomePage()
+            ' Find existing home form or create new one
+            Dim home As HomePage = Nothing
+            For Each form As Form In Application.OpenForms
+                If TypeOf form Is HomePage Then
+                    home = CType(form, HomePage)
+                    Exit For
+                End If
+            Next
+
+            If home Is Nothing Then
+                home = New HomePage()
+            End If
+
             home.Show()
             Me.Close()
         End If
