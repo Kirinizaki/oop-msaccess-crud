@@ -1,4 +1,22 @@
 ﻿Public Class Form1
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
+
+        ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox4.Items.Add("Owned")
+        ComboBox4.Items.Add("Rented")
+        ComboBox4.Items.Add("Temporary Housing")
+        ComboBox4.Items.Add("Others")
+
+        ComboBox5.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox5.Items.Add("Citizen")
+        ComboBox5.Items.Add("Permanent Resident")
+        ComboBox5.Items.Add("Temporary Resident")
+        ComboBox5.Items.Add("Refugee")
+        ComboBox5.Items.Add("Others")
+    End Sub
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblLastNametext.Click
 
     End Sub
@@ -15,22 +33,15 @@
 
     End Sub
 
-    Private Sub btnChooseFile_Click(sender As Object, e As EventArgs) Handles btnChooseFile.Click
+    Private Sub btnChooseFile_Click(sender As Object, e As EventArgs)
         ' Create OpenFileDialog
-        Dim ofd As New OpenFileDialog()
+        Dim ofd As New OpenFileDialog
 
         ' Allow only image file types
         ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
         ofd.Title = "Select an Image"
 
-        ' If user selected a file
-        If ofd.ShowDialog() = DialogResult.OK Then
-            ' Load selected image into PictureBox
-            PictureBox1.Image = Image.FromFile(ofd.FileName)
 
-            ' Adjust image display
-            PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
-        End If
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs)
@@ -53,24 +64,20 @@
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked Then
-            ' Copy Address 1 to Address 2
-            Address2TextBox.Text = AddressTextBox.Text
-            ' Lock Address 2 so it can’t be edited
-            Address2TextBox.ReadOnly = True
-        Else
-            ' Allow manual input again
-            Address2TextBox.Clear()
-            Address2TextBox.ReadOnly = False
-        End If
+
+    Private Sub lblHeightText_Click(sender As Object, e As EventArgs)
+
     End Sub
 
-    Private Sub AddressTextBox_TextChanged(sender As Object, e As EventArgs)
-        ' Keep Address 2 updated if checkbox is checked
-        If CheckBox1.Checked Then
-            Address2TextBox.Text = AddressTextBox.Text
-        End If
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
     End Sub
 
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
 End Class
