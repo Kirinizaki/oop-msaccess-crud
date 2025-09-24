@@ -512,7 +512,7 @@ Partial Class Form1
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
-        CheckBox1.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        CheckBox1.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0)
         CheckBox1.Location = New Point(3, 45)
         CheckBox1.Name = "CheckBox1"
         CheckBox1.Size = New Size(120, 17)
@@ -837,7 +837,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0)
         Label4.Location = New Point(24, 19)
         Label4.Name = "Label4"
         Label4.Size = New Size(289, 25)
