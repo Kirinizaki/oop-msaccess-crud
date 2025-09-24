@@ -99,7 +99,7 @@ Partial Class Registration_2
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 37F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 178F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 36F))
-        TableLayoutPanel1.Size = New Size(1103, 377)
+        TableLayoutPanel1.Size = New Size(1121, 463)
         TableLayoutPanel1.TabIndex = 0
         ' 
         ' Label1
@@ -122,7 +122,7 @@ Partial Class Registration_2
         Panel1.ForeColor = Color.Black
         Panel1.Location = New Point(3, 218)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(379, 156)
+        Panel1.Size = New Size(385, 242)
         Panel1.TabIndex = 3
         ' 
         ' Label3
@@ -154,7 +154,7 @@ Partial Class Registration_2
         ' 
         PictureBox1.Anchor = AnchorStyles.Top
         PictureBox1.Image = My.Resources.Resources.pfp
-        PictureBox1.Location = New Point(100, 40)
+        PictureBox1.Location = New Point(103, 40)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(184, 172)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
@@ -172,9 +172,9 @@ Partial Class Registration_2
         Panel3.Controls.Add(TextBox3)
         Panel3.Controls.Add(Label7)
         Panel3.Dock = DockStyle.Fill
-        Panel3.Location = New Point(388, 40)
+        Panel3.Location = New Point(394, 40)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(712, 172)
+        Panel3.Size = New Size(724, 172)
         Panel3.TabIndex = 4
         ' 
         ' TextBox6
@@ -285,7 +285,7 @@ Partial Class Registration_2
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 39F))
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 39F))
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 91F))
-        TableLayoutPanel2.Size = New Size(1103, 325)
+        TableLayoutPanel2.Size = New Size(1121, 325)
         TableLayoutPanel2.TabIndex = 2
         ' 
         ' Panel2
@@ -297,7 +297,7 @@ Partial Class Registration_2
         Panel2.Controls.Add(Label2)
         Panel2.Location = New Point(3, 3)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(503, 74)
+        Panel2.Size = New Size(511, 74)
         Panel2.TabIndex = 0
         ' 
         ' TextBox1
@@ -379,7 +379,7 @@ Partial Class Registration_2
         Panel4.Controls.Add(TextBox7)
         Panel4.Controls.Add(Label12)
         Panel4.Controls.Add(Label11)
-        Panel4.Location = New Point(512, 3)
+        Panel4.Location = New Point(520, 3)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(577, 74)
         Panel4.TabIndex = 5
@@ -424,7 +424,7 @@ Partial Class Registration_2
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(538, 94)
+        Label13.Location = New Point(546, 94)
         Label13.Margin = New Padding(29, 0, 10, 0)
         Label13.Name = "Label13"
         Label13.Size = New Size(59, 21)
@@ -435,7 +435,7 @@ Partial Class Registration_2
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(538, 166)
+        Label14.Location = New Point(546, 166)
         Label14.Margin = New Padding(29, 10, 10, 0)
         Label14.Name = "Label14"
         Label14.Size = New Size(61, 21)
@@ -445,7 +445,7 @@ Partial Class Registration_2
         ' TextBox10
         ' 
         TextBox10.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox10.Location = New Point(539, 201)
+        TextBox10.Location = New Point(547, 201)
         TextBox10.Margin = New Padding(30, 6, 10, 10)
         TextBox10.Name = "TextBox10"
         TextBox10.Size = New Size(501, 29)
@@ -454,7 +454,7 @@ Partial Class Registration_2
         ' TextBox9
         ' 
         TextBox9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox9.Location = New Point(539, 123)
+        TextBox9.Location = New Point(547, 123)
         TextBox9.Margin = New Padding(30, 6, 10, 10)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(501, 29)
@@ -523,7 +523,7 @@ Partial Class Registration_2
         ' 
         Panel6.Controls.Add(TextBox11)
         Panel6.Controls.Add(Label18)
-        Panel6.Location = New Point(512, 237)
+        Panel6.Location = New Point(520, 237)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(588, 85)
         Panel6.TabIndex = 11
@@ -610,7 +610,7 @@ Partial Class Registration_2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1149, 762)
+        ClientSize = New Size(1167, 848)
         Controls.Add(TableLayoutPanel3)
         Controls.Add(TableLayoutPanel2)
         Controls.Add(Button1)

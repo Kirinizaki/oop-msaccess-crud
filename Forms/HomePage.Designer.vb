@@ -92,7 +92,7 @@ Partial Class HomePage
         ' 
         Btn_Add.Dock = DockStyle.Fill
         Btn_Add.Location = New Point(4, 4)
-        Btn_Add.Margin = New Padding(4, 4, 4, 4)
+        Btn_Add.Margin = New Padding(4)
         Btn_Add.Name = "Btn_Add"
         Btn_Add.Size = New Size(216, 50)
         Btn_Add.TabIndex = 1
@@ -103,7 +103,7 @@ Partial Class HomePage
         ' 
         RefreshButton.Dock = DockStyle.Fill
         RefreshButton.Location = New Point(676, 4)
-        RefreshButton.Margin = New Padding(4, 4, 4, 4)
+        RefreshButton.Margin = New Padding(4)
         RefreshButton.Name = "RefreshButton"
         RefreshButton.Size = New Size(217, 50)
         RefreshButton.TabIndex = 2
@@ -114,7 +114,7 @@ Partial Class HomePage
         ' 
         Btn_Edit.Dock = DockStyle.Fill
         Btn_Edit.Location = New Point(228, 4)
-        Btn_Edit.Margin = New Padding(4, 4, 4, 4)
+        Btn_Edit.Margin = New Padding(4)
         Btn_Edit.Name = "Btn_Edit"
         Btn_Edit.Size = New Size(216, 50)
         Btn_Edit.TabIndex = 3
@@ -131,7 +131,7 @@ Partial Class HomePage
         Btn_Delete.FlatStyle = FlatStyle.Flat
         Btn_Delete.ForeColor = Color.FromArgb(CByte(120), CByte(80), CByte(80))
         Btn_Delete.Location = New Point(452, 4)
-        Btn_Delete.Margin = New Padding(4, 4, 4, 4)
+        Btn_Delete.Margin = New Padding(4)
         Btn_Delete.Name = "Btn_Delete"
         Btn_Delete.Size = New Size(216, 50)
         Btn_Delete.TabIndex = 4
@@ -151,7 +151,7 @@ Partial Class HomePage
         TableLayoutPanel1.Controls.Add(Btn_Edit, 1, 0)
         TableLayoutPanel1.Dock = DockStyle.Fill
         TableLayoutPanel1.Location = New Point(18, 17)
-        TableLayoutPanel1.Margin = New Padding(4, 4, 4, 4)
+        TableLayoutPanel1.Margin = New Padding(4)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 1
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 100.0F))
@@ -168,7 +168,7 @@ Partial Class HomePage
         TableLayoutPanel2.Controls.Add(Panel_Footer, 0, 3)
         TableLayoutPanel2.Dock = DockStyle.Fill
         TableLayoutPanel2.Location = New Point(0, 0)
-        TableLayoutPanel2.Margin = New Padding(4, 4, 4, 4)
+        TableLayoutPanel2.Margin = New Padding(4)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 4
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 92.0F))
@@ -266,7 +266,7 @@ Partial Class HomePage
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(933, 692)
         Controls.Add(TableLayoutPanel2)
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         MinimumSize = New Size(946, 724)
         Name = "HomePage"
         StartPosition = FormStartPosition.CenterScreen
