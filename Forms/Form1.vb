@@ -48,7 +48,7 @@
 
     End Sub
 
-    Private Sub Label3_Click_1(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click_1(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -80,4 +80,33 @@
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
+    Private Sub lblGenderText_Click(sender As Object, e As EventArgs) Handles lblGenderText.Click
+        ' Your code here (or leave empty if you don't need to do anything)
+    End Sub
+    Private Sub lblBirthdayText_Click(sender As Object, e As EventArgs) Handles lblBirthdayText.Click
+        ' You can leave this empty or add code if needed
+    End Sub
+
+    Private Sub lblAgeText_Click(sender As Object, e As EventArgs) Handles lblAgeText.Click
+        ' Leave empty or add code if you want something to happen when the label is clicked
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+    Private Sub lblMobileText_Click(sender As Object, e As EventArgs) Handles lblMobileText.Click
+        ' Add code here if you want something to happen when the label is clicked
+    End Sub
+
+    Private Sub TableLayoutPanel10_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel10.Paint
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+    Private Sub lblCivilStatusText_Click(sender As Object, e As EventArgs) Handles lblCivilStatusText.Click
+        ' You can add code here if you want the label to respond to clicks
+    End Sub
+
 End Class
